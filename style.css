@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+:root {
+    --navbar_bg: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar {
+    background-color: var(--navbar_bg);
+    color: #fff;
+}
+
+.container {
+    padding: 20px 130px;
+}
+
+.drop {
+    text-align: center;
+    margin: 4px 5px 0px;
+    width: 15px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-wrapper > * {
+    display: flex;
+    align-items: center;
+}
+
+.list-items {
+    gap: 10px;
+    order: 2;
+    font-size: 0.9rem;
+}
+
+li {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    order: 1;
+}
+
+.icons {
+    gap: 10px;  
+    order: 3;
+}
+
+.icons > * {
+    border: 1px solid #EC0000;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+/* */
+
+.main-1 {
+    padding: 85px 0px;
+    /* background: linear-gradient(to right, #000000, #EC0000); */
+    background: linear-gradient(to bottom right, #000000, transparent),
+            #EC0000;
+
+    /* /* background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%),
+            #EC0000; */
+            /* background: linear-gradient(to right, #0e0e0e, #EC0000); */ 
+    display: flex;
+    color: #fff;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+.main-1 h3 {
+    font-size: 1.5rem;
+}
+
+.main-1 button  {
+    margin-top: 20px;
+    padding: 13px 18px;
+    border-radius: 15px;
+    border: 1px solid #EC0000;
+    font-weight: 600 !important;
+    cursor: pointer;
+    
+}
+
+#watch {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #EC0000;
+}
+
+.primary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    width: 100%;
+}
+
+
+/* */
+
+.anime-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.main-2, .main-3, .main-4 {
+    background-color: var(--navbar_bg);
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.main-2, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 5px solid #EC0000;
+    padding: 10px;
+}
+
+.trend-anime, .popular-anime, .top-anime {              /* key */
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime {
+    flex-grow: 1;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.img-wrap {
+    height: 400px;
+    position: relative;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.category  button {
+    background-color: #4B0101;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    border: 0px;
+}
+
+.actions button {
+
+    font-size: 0.7rem;
+    padding: 2px 7px;
+    border-radius: 15px;
+    border: 0px;
+    color: #fff;
+    background-color: #000000;
+}
+
+#view {
+    left: 72%;
+    position: absolute;
+    top: 92%;
+}
+
+#comment {
+    margin-left: 8px;
+    position: absolute;
+    top: 92%;
+}
+
+#rating {
+    margin-left: 10px;
+    position: absolute;
+    top: 3%;
+    padding: 5px 20px;
+    background-color: #EC0000;
+}
+ 
+.anime:hover {
+    transition: .5s;
+    transform: scale(1.055);
+}
+
+
+/*  */
+
+.main-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+main {
+    background-color: var(--navbar_bg);
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 10px;  /* Adjust the width as per your preference */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #EC0000;  /* Change the color to your desired color */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;  /* Change the color to your desired color */
+}
+
+.top-anime {
+    margin-top: 80px;
+}
+
+.top-anime .anime {
+    flex-grow: 1;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -10px;
+    position: relative;
+} 
+
+.top-anime {
+    pointer-events: none;
+}
+
+.top-anime .img-wrap {
+    height: 250px;
+}
+
+.top-anime .anime:hover {
+    transition: .5s;
+    transform: scale(1.055);
+    pointer-events: auto;
+}
+
+.top-anime .title {
+    display: block !important;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.top-anime .anime img {
+    filter: brightness(0.5); /* Adjust the value between 0 and 1 to control the darkness */
+}
+
+.top-anime #view {
+    left: 85%;
+    top: 88%;
+}
+
+.trend span {
+    color: #a11111;
+    cursor: pointer;
+}
+
+.trend span:hover {
+    color: #EC0000;
+}
+
+.top-anime #comment {
+    top: 88%;
+}
+
+/* */
+
+.main-5 {
+    background: linear-gradient(to bottom right, #000000, transparent),
+            #EC0000;
+    
+}
+
+.user-wrapper {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: start;
+    color: #fff;
+}
+
+.user-wrapper img {
+    width: 100%;
+}
+
+.user-wrapper .left {
+    width: 45%;
+}
+
+.user-wrapper .left h4 {
+    margin: 220px 0px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.user-wrapper .right {
+    width: 45%;
+}
+
+input {
+    width: 500px;
+    padding: 15px;
+    border-radius: 40px;
+    /* border: 1px solid #EC0000; */
+    outline-color: #EC0000;
+    border: 0px solid;
+    color: #EC0000;
+    background-color: transparent;
+}
+
+.subs {
+    margin-top: 20px;
+    width: 580px;
+    padding: 7px;
+    border-radius: 40px;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6b0f0f;
+}
+
+#message {
+    text-align: center;
+    border-radius: 40px;
+    padding: 1.2em;
+    font-size: 1rem;
+    color: #fff;
+    border: 0px;
+    background-color: #a11111;
+}
+
+
+
+
+
+
+
+/*PDF VIEWER*/
+
+.top-bar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .btn {
+    background: coral;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .page-info {
+    margin-left: 1rem;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+  }
+
+
+
+
+
+
